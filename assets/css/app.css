@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-primary {
+	color: white!important;
+}
+header.fixed-top {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.05) !important;
+}
+.translated-ltr header.fixed-top {
+	top: 38px !important;
+}
+
+section, footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+section#start {
+	background-color: #222;
+	background-image: url('../img/banner/kantor.jpg');
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+section#start #banner-img {
+	position: relative;
+	width: 300px;
+	height: 450px;
+}
+section#start #banner-img img {
+	position: absolute;	
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	max-height: 450px;
+	object-fit: cover;
+	object-position: top;
+	transition: .7s ease-in-out;
+}
+section#start #banner-img img:first-child {
+	transform: rotate(5deg) translate(20px);
+	filter: brightness(0.5);
+}
+@media (max-width : 400px) {
+	section#start #banner-img img:first-child {
+		transform: scale(0.9) translateY(-60px);
+		filter: brightness(0.5);
+	}
+}
+section#start #banner-img img:last-child {
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+section#start #banner-img img:last-child:hover {
+	transform: scale(1.1);
+}
+
+section#start.top {
+	background-image: url("../img/banner/kain.jpg");
+	background-color: var(--bs-primary);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	color: var(--bs-white);
+}
+section#start a {
+	color: var(--bs-white);
+}
+section#start .breadcrumb-item,
+section#start .breadcrumb-item + .breadcrumb-item::before,
+section#start .breadcrumb-item.active {
+	color: var(--bs-white)!important;
+}
+
+
+
+section#kemitraan {
+	background-image: url("../../assets/img/banner/kemitraan.webp");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-color: #555;
+}
+
+section#fitur .card:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+section#product .card {
+	height: 500px;
+	position: relative;
+	cursor: default;
+}
+
+section#product .card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background-color: var(--bs-primary);
+	color: white !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .7s ease;
+	height: 15%;
+	opacity: 1;
+}
+
+section#product-list .card .img-product{
+	overflow: hidden;
+}
+section#product-list .card img {
+	border-radius: 0;
+	transition: .7s all ease;
+}
+section#product-list .card:hover img {
+	transform: scale(1.1);
+}
+
+.owl-carousel .owl-items {
+	height: 300px;
+}
+.owl-carousel .owl-items img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.object-fit {
+	object-fit: cover;
+}
+.fit-center {
+	object-position: center;
+}
+.fit-top {
+	object-position: top;
+}
+
+#galery .galery-items {
+	display: block;
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	height: 100%;
+}
+#galery .galery-items img, #galery .galery-items .text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#galery .galery-items .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+	align-items: center;
+	background-color: #00000050;
+	backdrop-filter: blur(1px) brightness(0.5);
+	color: white;
+	text-align: center;
+	transition: all .7s ease;
+}
+#galery .galery-items .text:hover {
+	backdrop-filter: blur(10px) brightness(0.3);
+}
+footer {
+	background-image: url('https://www.rinso.com/images/h0nadbhvm6m4/17RmARrAatDIJ0x2DxsGSc/68f28770f0815e43ef8408c6751dcefb/MDIuX1JpbnNvX09rdG9iZXJfSGVhZGVyLmpwZw/1000w-668h/pembatik-pemula.jpg');
+	background-color: var(--bs-blue);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+#size-selector input[type="radio"] {
+	display: none;
+}
+#size-selector label[class*="size-"] {
+	padding: .5rem 1rem;
+	background-color: var(--bs-light);
+}
+#size-selector .s:checked ~ .size-s,
+#size-selector .m:checked ~ .size-m,
+#size-selector .l:checked ~ .size-l,
+#size-selector .xl:checked ~ .size-xl,
+#size-selector .xxl:checked ~ .size-xxl {
+	background-color: var(--bs-primary);
+/*	color: ;*/
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+.swiper-thumb, .swiper-preview, .swiper-wrapper {
+	height: 450px;
+}
+.swiper-thumb {
+	display: flex;
+	justify-content: space-around;
+}
+.swiper-thumb .swiper-slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.btn-shopee {
+	--bs-btn-color: #fff !important;
+	--bs-btn-bg: #f44f31 !important;
+	--bs-btn-border-color: #f44f31 !important;
+	--bs-btn-hover-color: #fff !important;
+	--bs-btn-hover-bg: #c43920 !important;
+	--bs-btn-hover-border-color: #c43920 !important;
+	--bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
+	--bs-btn-active-color: #fff !important;
+	--bs-btn-active-bg: #c43920 !important;
+	--bs-btn-active-border-color: #13653f !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: #fff !important;
+	--bs-btn-disabled-bg: #f44f31 !important;
+	--bs-btn-disabled-border-color: #f44f31 !important;
+}
+.btn-tokopedia {
+	--bs-btn-color: #fff !important;
+	--bs-btn-bg: #439341 !important;
+	--bs-btn-border-color: #439341 !important;
+	--bs-btn-hover-color: #fff !important;
+	--bs-btn-hover-bg: #2a6828 !important;
+	--bs-btn-hover-border-color: #2a6828 !important;
+	--bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
+	--bs-btn-active-color: #fff !important;
+	--bs-btn-active-bg: #2a6828 !important;
+	--bs-btn-active-border-color: #13653f !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: #fff !important;
+	--bs-btn-disabled-bg: #439341 !important;
+	--bs-btn-disabled-border-color: #439341 !important;
+}
+.btn-lazada {
+	--bs-btn-color: #fff !important;
+	--bs-btn-bg: #16196e !important;
+	--bs-btn-border-color: #16196e !important;
+	--bs-btn-hover-color: #fff !important;
+	--bs-btn-hover-bg: #121562 !important;
+	--bs-btn-hover-border-color: #121562 !important;
+	--bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
+	--bs-btn-active-color: #fff !important;
+	--bs-btn-active-bg: #121562 !important;
+	--bs-btn-active-border-color: #13653f !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: #fff !important;
+	--bs-btn-disabled-bg: #16196e !important;
+	--bs-btn-disabled-border-color: #16196e !important;
+}
+.btn-tiktokshop {
+	--bs-btn-color: #fff !important;
+	--bs-btn-bg: #1a1a1a!important;
+	--bs-btn-border-color: #1a1a1a!important;
+	--bs-btn-hover-color: #fff !important;
+	--bs-btn-hover-bg: #080808 !important;
+	--bs-btn-hover-border-color: #080808 !important;
+	--bs-btn-focus-shadow-rgb: 60, 153, 110 !important;
+	--bs-btn-active-color: #fff !important;
+	--bs-btn-active-bg: #080808 !important;
+	--bs-btn-active-border-color: #13653f !important;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+	--bs-btn-disabled-color: #fff !important;
+	--bs-btn-disabled-bg: #1a1a1a!important;
+	--bs-btn-disabled-border-color: #1a1a1a!important;
+}
+
+.goog-te-gadget-simple {
+	background-color: transparent !important;
+	border: none !important;
+}
+.goog-te-gadget-simple a {
+	color: var(--bs-white)!important;
+}
+.goog-te-gadget-icon {
+	display: none;
+}
+
+.spin {
+	animation: spin-animate 10s linear infinite;
+}
+
+@keyframes spin-animate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(90deg);
+	}
+}
+
+.r-1 {
+	transform: rotate(90deg);
+}
+.r-2 {
+	transform: rotate(180deg);
+}
+.r-3 {
+	transform: rotate(270deg);
+}
+
+.bg-pattern {
+	background-image: url(../img/decor/pattern.png);
+}
