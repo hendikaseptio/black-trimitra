@@ -339,12 +339,14 @@ footer {
 	background-image: url('https://images.pexels.com/photos/10682942/pexels-photo-10682942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 	background-attachment: fixed;
 	background-blend-mode: luminosity;
+	background-size: cover;
 }
 
-.dekor-produk {
+.dekor-produk img {
 	transition: .5s all ease-in-out;
 }
 
-.dekor-produk:hover {
+.dekor-produk:hover img {
+	animation: spin-animate 1s linear infinite !important;
 	box-shadow: 0 10px 50px -10px var(--bs-primary)!important;
 }
