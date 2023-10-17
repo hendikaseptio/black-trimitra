@@ -49,10 +49,26 @@ section#old-banner #banner-img img:first-child {
 	transform: rotate(5deg) translate(20px);
 	filter: brightness(0.5);
 }
+#banner-pertama {
+		top: 35%;
+	}
+
 @media (max-width : 400px) {
 	section#old-banner #banner-img img:first-child {
 		transform: scale(0.9) translateY(-60px);
 		filter: brightness(0.5);
+	}
+	/*SwipperBanner img::first-child {
+		bottom: 20%!important;
+	}*/
+}
+@media (max-width : 600px) {
+
+	#banner-pertama {
+		bottom: 20% !important;
+	}
+	#banner-pertama img {
+		width: 50%!important;
 	}
 }
 section#old-banner #banner-img img:last-child {
@@ -348,5 +364,5 @@ footer {
 
 .dekor-produk:hover img {
 	animation: spin-animate 1s linear infinite !important;
-	box-shadow: 0 10px 50px -10px var(--bs-primary)!important;
+	box-shadow: 0 0px 50px 0px var(--bs-primary)!important;
 }
