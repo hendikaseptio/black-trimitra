@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
 * {
 	font-family: 'Montserrat', sans-serif;
 }
 .font-script {
-	font-family: 'Satisfy', cursive;
+	font-family: 'Lugrasimo', cursive;
 }
 .btn-primary {
 	color: white!important;
